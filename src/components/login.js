@@ -1,13 +1,25 @@
-function Login(){
-    // <>
-      {/* <div className='Login'>
-      Usuário: <input type="text" className='usuario' onChange={(e) => setUsuario(e.target.value)} />
-      Senha: <input type="text" className="senha" onChange={(e) => setSenha(e.target.value)} />
-      <div className='button'>
-      <button onClick={console.log("oi")}>Login</button>
-      </div>
-      </div>
-      </> */}
+import React from 'react';
+
+function Login(props){
+  const [usuario, setUsuario] = React.useState();
+  const [senha, setSenha] = React.useState();
+
+  function verificaLogin(){
+    if(usuario === "OI" && senha === "12")
+    props.setLogin({nome:'gran'})
+    else
+    alert("Login Inválido")
+
+  }
+  return(
+  <div className='login'>
+    Usuário: <input type="text" className='usuarioLogin' onChange={(e) => setUsuario(e.target.value)} />
+    Senha: <input type="password" className="senhaLogin" onChange={(e) => setSenha(e.target.value)} />
+    <div className='btnLogin'>
+      <button onClick={verificaLogin}>Login</button>
+    </div>
+  </div>
+  )
 }
 
 export default Login;

@@ -3,29 +3,30 @@
   padding: 0;
 }
 
-.Login{
+.login{
   background-color: red;
   text-align: center;
   margin-top: 10%;
   margin-left: 40%;
-  max-width: 10%; 
+  max-width: 18%; 
 }
 
-.Home{
+.user{
+  background-color: red;
   text-align: center;
   margin-left: 90%;
   
 }
 
-.button{
+.btnLogin{
   margin-top: 4%;
 }
 
-.usuario{
+.usuarioLogin{
   margin-top: 2%;
 }
 
-.senha{
+.senhaLogin{
   margin-top: 2%;
   margin-left: 4%;
 }

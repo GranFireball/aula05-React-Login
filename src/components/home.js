@@ -1,13 +1,16 @@
 import React from 'react';
+
 function Home(props){
-    const [usuario, setUsuario] = React.useState();
-    const [senha, setSenha] = React.useState();
-    <>
-    <h3>
-      {props.usuario}
-      </h3>
-      <button onClick={() => {props.setUsuario(''); props.setSenha('')} }>Logout</button>
-    </>
+  return(
+      <div className='user'>
+        <h3>
+        {props.login.nome}
+        </h3>
+        <div>
+        <button onClick={() => {props.setLogin(undefined)} }>Logout</button>
+        </div>
+      </div>
+  )
 }
 
 export default Home;
